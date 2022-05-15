@@ -37,11 +37,11 @@ namespace LostArk.Game.Messages.Structures
             }
             Unk7 = reader.ReadInt32();
             Unk8 = reader.ReadBytes(6);
-            Id = reader.ReadInt64();
+            Unk9 = reader.ReadInt64();
             Unk10 = reader.ReadByte();
             SkillId = reader.ReadInt32();
             Unk12 = reader.ReadInt16();
-            Unk13 = reader.ReadInt64();
+            Id = reader.ReadInt64();
             Unk14 = reader.ReadByte();
             if(Unk14 == 1)
             {
@@ -64,11 +64,11 @@ namespace LostArk.Game.Messages.Structures
         public Struct_269 Struct_269_0 {get;} = new Struct_269();
         public int Unk7 {get;}
         public byte[] Unk8 {get;}
-        public long Id { get; }
+        public long Unk9 { get; }
         public byte Unk10 {get;}
         public int SkillId { get; }
         public short Unk12 {get;}
-        public long Unk13 {get;}
+        public long Id { get; }
         public byte Unk14 {get;}
         public int Unk14_0 {get;}
         public int SkillEffect { get; }
