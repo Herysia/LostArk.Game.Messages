@@ -13,11 +13,11 @@ namespace LostArk.Game.Messages.Types
             bool unicode;
             if (data.Unk0 == data.Unk0_0.Length)
             {
-                unicode = true;
+                unicode = false;
             }
             else if (2 * data.Unk0 == data.Unk0_0.Length)
             {
-                unicode = false;
+                unicode = true;
             }
             else
             {
