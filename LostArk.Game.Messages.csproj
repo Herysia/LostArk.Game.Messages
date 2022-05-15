@@ -101,6 +101,7 @@
     <Compile Include="Structures\CombatEffects.cs" />
     <Compile Include="Structures\SkillRunes.cs" />
     <Compile Include="Structures\Struct_98.cs" />
+    <Compile Include="Types\DamageModifierFlags.cs" />
     <Compile Include="Types\LostArkString.cs" />
     <Compile Include="Types\CounterAttackEvent.cs" />
     <Compile Include="UnknownMessage.cs" />
