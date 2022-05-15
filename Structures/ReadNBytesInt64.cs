@@ -28,7 +28,7 @@ namespace LostArk.Game.Messages.Structures
         internal ReadNBytesInt64(LostArkMessageReader reader)
         {
             valid = true;
-            var flag = reader.ReadInt16();
+            var flag = reader.ReadByte();
             var bytes = reader.ReadBytes((flag >> 1) & 7);
             var result = (_bytesToInt64(bytes) << 4) | (uint) (flag >> 4);
             Value = (flag & 1) == 0 ? result : -result;
