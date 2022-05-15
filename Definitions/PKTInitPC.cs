@@ -51,7 +51,7 @@ namespace LostArk.Game.Messages.Definitions
             Unk31 = reader.ReadInt32();
             Struct_74_32 = new Struct_74(reader);
             Unk33 = reader.ReadByte();
-            Unk34 = reader.ReadInt64();
+            Id = reader.ReadInt64();
             Unk35 = reader.ReadByte();
             Struct_394_36 = new Struct_394(reader);
             Struct_395_37 = new Struct_395(reader);
@@ -110,7 +110,7 @@ namespace LostArk.Game.Messages.Definitions
         public int Unk31 {get;}
         public Struct_74 Struct_74_32 {get;} = new Struct_74();
         public byte Unk33 {get;}
-        public long Unk34 {get;}
+        public long Id { get; }
         public byte Unk35 {get;}
         public Struct_394 Struct_394_36 {get;} = new Struct_394();
         public Struct_395 Struct_395_37 {get;} = new Struct_395();
