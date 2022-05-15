@@ -80,7 +80,7 @@
     <Compile Include="Structures\Struct_394.cs" />
     <Compile Include="Structures\Struct_395.cs" />
     <Compile Include="Structures\SkillSet.cs" />
-    <Compile Include="Structures\Struct_435.cs" />
+    <Compile Include="Structures\ReadFlagBytes2.cs" />
     <Compile Include="Structures\Struct_44.cs" />
     <Compile Include="Structures\NameString.cs" />
     <Compile Include="Structures\Struct_449.cs" />

@@ -23,7 +23,7 @@ namespace LostArk.Game.Messages.Structures
         internal Struct_595(LostArkMessageReader reader)
         {
             valid = true;
-            Struct_435_0 = new Struct_435(reader);
+            Struct_435_0 = new ReadFlagBytes2(reader);
             Unk1 = reader.ReadByte();
             Unk2 = reader.ReadInt64();
             Unk3 = reader.ReadInt16();
@@ -34,7 +34,7 @@ namespace LostArk.Game.Messages.Structures
             Unk8 = reader.ReadInt64();
         }
 
-        public Struct_435 Struct_435_0 {get;} = new Struct_435();
+        public ReadFlagBytes2 Struct_435_0 { get; } = new ReadFlagBytes2();
         public byte Unk1 {get;}
         public long Unk2 {get;}
         public short Unk3 {get;}
