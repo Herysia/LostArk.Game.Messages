@@ -18,7 +18,7 @@ namespace LostArk.Game.Messages.Structures
         {
             valid = true;
             var s = reader.ReadUInt16();
-            if ((s & 0xfff) < 0x81)
+            if ((s & 0xfff) < 0x81f)
             {
                 reader.BaseStream.Position -= 2;
                 Value = reader.ReadInt64();
